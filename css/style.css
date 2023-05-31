@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(202, 240, 248);
+}/*# sourceMappingURL=style.css.map */
