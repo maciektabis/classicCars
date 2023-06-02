@@ -8,4 +8,14 @@
 
 body {
   background-color: rgb(202, 240, 248);
+}
+
+.navbar {
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  font-size: 18px;
+}
+.navbar a,
+.navbar i {
+  color: rgb(0, 180, 216);
 }/*# sourceMappingURL=style.css.map */
