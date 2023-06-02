@@ -10,11 +10,58 @@ body {
 	background-color: $color-main;
 }
 .navbar {
+	display: flex;
 	text-transform: uppercase;
 	background-color: whitesmoke;
 	font-size: 18px;
 	a,
 	i {
 		color: $color-second;
+	}
+	a:hover {
+		color: orangered;
+	}
+}
+
+header {
+	.header-section {
+		display: flex;
+		position: relative;
+		z-index: -5;
+	}
+	.header-title {
+		display: flex;
+		position: absolute;
+		h1 {
+			padding-top: 100px;
+			margin-left: 850px;
+			color: rgb(255, 68, 0);
+			font-family: 'Gravitas One', cursive;
+			font-size: 70px;
+			z-index: 10;
+		}
+	}
+	.header-img {
+		margin-top: 90px;
+		display: flex;
+		z-index: 0;
+		.mercuryMedium {
+			display: none;
+		}
+		.mercurySmall {
+			display: flex;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	header {
+		.header-img {
+			.mercuryMedium {
+				display: flex;
+			}
+			.mercurySmall {
+				display: none;
+			}
+		}
 	}
 }

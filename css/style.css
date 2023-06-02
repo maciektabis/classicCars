@@ -11,6 +11,7 @@ body {
 }
 
 .navbar {
+  display: flex;
   text-transform: uppercase;
   background-color: whitesmoke;
   font-size: 18px;
@@ -18,4 +19,45 @@ body {
 .navbar a,
 .navbar i {
   color: rgb(0, 180, 216);
+}
+.navbar a:hover {
+  color: orangered;
+}
+
+header .header-section {
+  display: flex;
+  position: relative;
+  z-index: -5;
+}
+header .header-title {
+  display: flex;
+  position: absolute;
+}
+header .header-title h1 {
+  padding-top: 100px;
+  margin-left: 850px;
+  color: rgb(255, 68, 0);
+  font-family: "Gravitas One", cursive;
+  font-size: 70px;
+  z-index: 10;
+}
+header .header-img {
+  margin-top: 90px;
+  display: flex;
+  z-index: 0;
+}
+header .header-img .mercuryMedium {
+  display: none;
+}
+header .header-img .mercurySmall {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  header .header-img .mercuryMedium {
+    display: flex;
+  }
+  header .header-img .mercurySmall {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
