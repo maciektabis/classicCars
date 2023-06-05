@@ -7,57 +7,71 @@
 }
 
 body {
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
   background-color: rgb(202, 240, 248);
 }
 
-.navbar {
-  display: flex;
-  text-transform: uppercase;
+nav {
   background-color: whitesmoke;
-  font-size: 18px;
+  z-index: 1;
 }
-.navbar a,
-.navbar i {
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: rgb(245, 176, 151);
+}
+nav .nav-link {
   color: rgb(0, 180, 216);
+  text-transform: uppercase;
 }
-.navbar a:hover {
-  color: orangered;
+nav .navbar-brand {
+  color: rgb(245, 176, 151);
+}
+nav .nav-link:hover {
+  color: rgb(245, 176, 151);
 }
 
-header .header-section {
-  display: flex;
+header {
+  color: rgb(245, 176, 151);
+  font-family: "Alfa Slab One", cursive;
+}
+header h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+header p {
+  font-size: 14px;
+}
+header .hero-img {
   position: relative;
-  z-index: -5;
-}
-header .header-title {
-  display: flex;
-  position: absolute;
-}
-header .header-title h1 {
-  padding-top: 100px;
-  margin-left: 850px;
-  color: rgb(255, 68, 0);
-  font-family: "Gravitas One", cursive;
-  font-size: 70px;
-  z-index: 10;
-}
-header .header-img {
-  margin-top: 90px;
-  display: flex;
+  height: 100vh;
+  background-image: url("../img/classic-car-362176_640.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 0;
 }
-header .header-img .mercuryMedium {
-  display: none;
-}
-header .header-img .mercurySmall {
+header .hero-text {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+  text-transform: uppercase;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 101, 129, 0.5);
+  z-index: -10;
 }
 
 @media (min-width: 1200px) {
-  header .header-img .mercuryMedium {
-    display: flex;
-  }
-  header .header-img .mercurySmall {
-    display: none;
+  header .hero-img {
+    background-image: url("../img/classic-car-362176_1280.jpg");
   }
 }/*# sourceMappingURL=style.css.map */

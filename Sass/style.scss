@@ -7,61 +7,73 @@
 	padding: 0;
 }
 body {
+	font-family: 'Alfa Slab One', cursive;
+
+	position: relative;
 	background-color: $color-main;
 }
-.navbar {
-	display: flex;
-	text-transform: uppercase;
+nav {
 	background-color: whitesmoke;
-	font-size: 18px;
-	a,
-	i {
-		color: $color-second;
+	z-index: 1;
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show {
+		color: rgb(245, 176, 151);
 	}
-	a:hover {
-		color: orangered;
+
+	.nav-link {
+		color: $color-second;
+		text-transform: uppercase;
+	}
+	.navbar-brand {
+		color: rgb(245, 176, 151);
+	}
+	.nav-link:hover {
+		color: rgb(245, 176, 151);
+	}
+}
+header {
+	color: rgb(245, 176, 151);
+	font-family: 'Alfa Slab One', cursive;
+	h1 {
+		font-size: 50px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 14px;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/classic-car-362176_640.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+		text-transform: uppercase;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(10, 101, 129, 0.5);
+		z-index: -10;
 	}
 }
 
-header {
-	.header-section {
-		display: flex;
-		position: relative;
-		z-index: -5;
-	}
-	.header-title {
-		display: flex;
-		position: absolute;
-		h1 {
-			padding-top: 100px;
-			margin-left: 850px;
-			color: rgb(255, 68, 0);
-			font-family: 'Gravitas One', cursive;
-			font-size: 70px;
-			z-index: 10;
-		}
-	}
-	.header-img {
-		margin-top: 90px;
-		display: flex;
-		z-index: 0;
-		.mercuryMedium {
-			display: none;
-		}
-		.mercurySmall {
-			display: flex;
-		}
-	}
-}
 @media (min-width: 1200px) {
 	header {
-		.header-img {
-			.mercuryMedium {
-				display: flex;
-			}
-			.mercurySmall {
-				display: none;
-			}
+		.hero-img {
+			background-image: url('../img/classic-car-362176_1280.jpg');
 		}
 	}
 }
