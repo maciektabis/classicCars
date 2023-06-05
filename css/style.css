@@ -9,7 +9,19 @@
 body {
   font-family: "Alfa Slab One", cursive;
   position: relative;
-  background-color: rgb(202, 240, 248);
+  background-color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(245, 176, 151);
 }
 
 nav {
@@ -68,6 +80,27 @@ header .hero-shadow {
   height: 100%;
   background-color: rgba(10, 101, 129, 0.5);
   z-index: -10;
+}
+
+.aboutus {
+  color: rgb(1, 96, 111);
+}
+.aboutus h2 {
+  color: rgb(0, 180, 216);
+}
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover:hover {
+  color: rgb(245, 176, 151);
 }
 
 @media (min-width: 1200px) {

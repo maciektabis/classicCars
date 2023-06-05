@@ -8,8 +8,17 @@
 }
 body {
 	font-family: 'Alfa Slab One', cursive;
-
 	position: relative;
+	background-color: whitesmoke;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
 	background-color: $color-main;
 }
 nav {
@@ -69,7 +78,29 @@ header {
 		z-index: -10;
 	}
 }
-
+.aboutus {
+	color: rgb(1, 96, 111);
+	h2 {
+		color: $color-second;
+	}
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		// transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $color-main;
+	}
+}
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
