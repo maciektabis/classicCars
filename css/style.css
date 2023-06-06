@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 82px;
+}
+
 body {
   font-family: "Alfa Slab One", cursive;
   position: relative;
@@ -103,6 +107,11 @@ header .hero-shadow {
   color: rgb(245, 176, 151);
 }
 
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 272px;
+  }
+}
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/classic-car-362176_1280.jpg");

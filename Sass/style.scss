@@ -6,6 +6,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 82px;
+}
 body {
 	font-family: 'Alfa Slab One', cursive;
 	position: relative;
@@ -99,6 +102,11 @@ header {
 	}
 	.aboutus-hover:hover {
 		color: $color-main;
+	}
+}
+@media (min-width: 768px) {
+	html {
+		scroll-padding-top: 272px;
 	}
 }
 @media (min-width: 1200px) {
