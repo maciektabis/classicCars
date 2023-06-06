@@ -104,6 +104,22 @@ header {
 		color: $color-main;
 	}
 }
+.offer {
+	h2 {
+		color: $color-second;
+	}
+	.carousel-caption {
+		position: static;
+	}
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		position: fixed;
+		font-size: 20px;
+		color: $color-second;
+	}
+}
+
 @media (min-width: 768px) {
 	html {
 		scroll-padding-top: 272px;

@@ -107,6 +107,19 @@ header .hero-shadow {
   color: rgb(245, 176, 151);
 }
 
+.offer h2 {
+  color: rgb(0, 180, 216);
+}
+.offer .carousel-caption {
+  position: static;
+}
+.offer .carousel-control-prev,
+.offer .carousel-control-next {
+  position: fixed;
+  font-size: 20px;
+  color: rgb(0, 180, 216);
+}
+
 @media (min-width: 768px) {
   html {
     scroll-padding-top: 272px;
