@@ -135,6 +135,20 @@ header .hero-shadow {
   z-index: 5;
 }
 
+.team h2 {
+  color: rgb(0, 180, 216);
+}
+.team h5 {
+  color: black;
+}
+.team .card-body {
+  font-size: 14px;
+  background-color: rgba(1, 96, 111, 0.398);
+}
+.team .card-footer {
+  background-color: rgba(245, 176, 151, 0.709);
+}
+
 @media (min-width: 768px) {
   html {
     scroll-padding-top: 272px;
