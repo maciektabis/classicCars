@@ -106,7 +106,6 @@ header {
 }
 .offer {
 	position: relative;
-	color: rgb(1, 96, 111);
 
 	h2 {
 		color: $color-second;
@@ -114,13 +113,23 @@ header {
 
 	.carousel-caption {
 		position: static;
+		color: rgb(1, 96, 111);
 	}
-
+	img {
+		z-index: 0;
+	}
+	.carousel-indicators {
+		button {
+			margin-top: 150px;
+			background-color: rgb(245, 176, 151);
+		}
+	}
 	.carousel-control-prev,
 	.carousel-control-next {
 		margin-top: 200px;
 		font-size: 20px;
 		color: rgb(245, 176, 151);
+		z-index: 5;
 	}
 }
 
@@ -138,7 +147,7 @@ header {
 	.offer {
 		.carousel-control-prev,
 		.carousel-control-next {
-			margin-top: 500px;
+			margin-top: 250px;
 		}
 	}
 }

@@ -112,19 +112,27 @@ header .hero-shadow {
 
 .offer {
   position: relative;
-  color: rgb(1, 96, 111);
 }
 .offer h2 {
   color: rgb(0, 180, 216);
 }
 .offer .carousel-caption {
   position: static;
+  color: rgb(1, 96, 111);
+}
+.offer img {
+  z-index: 0;
+}
+.offer .carousel-indicators button {
+  margin-top: 150px;
+  background-color: rgb(245, 176, 151);
 }
 .offer .carousel-control-prev,
 .offer .carousel-control-next {
   margin-top: 200px;
   font-size: 20px;
   color: rgb(245, 176, 151);
+  z-index: 5;
 }
 
 @media (min-width: 768px) {
@@ -138,6 +146,6 @@ header .hero-shadow {
   }
   .offer .carousel-control-prev,
   .offer .carousel-control-next {
-    margin-top: 500px;
+    margin-top: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
