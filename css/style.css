@@ -103,10 +103,17 @@ header .hero-shadow {
 .aboutus .aboutus-card-text {
   font-size: 14px;
 }
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
 .aboutus .aboutus-hover:hover {
   color: rgb(245, 176, 151);
 }
 
+.offer {
+  position: relative;
+  color: rgb(1, 96, 111);
+}
 .offer h2 {
   color: rgb(0, 180, 216);
 }
@@ -115,9 +122,9 @@ header .hero-shadow {
 }
 .offer .carousel-control-prev,
 .offer .carousel-control-next {
-  position: fixed;
+  margin-top: 200px;
   font-size: 20px;
-  color: rgb(0, 180, 216);
+  color: rgb(245, 176, 151);
 }
 
 @media (min-width: 768px) {
@@ -128,5 +135,9 @@ header .hero-shadow {
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/classic-car-362176_1280.jpg");
+  }
+  .offer .carousel-control-prev,
+  .offer .carousel-control-next {
+    margin-top: 500px;
   }
 }/*# sourceMappingURL=style.css.map */

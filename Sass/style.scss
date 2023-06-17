@@ -98,25 +98,29 @@ header {
 		font-size: 14px;
 	}
 	.aboutus-hover {
-		// transition: color 0.3s;
+		transition: color 0.3s;
 	}
 	.aboutus-hover:hover {
 		color: $color-main;
 	}
 }
 .offer {
+	position: relative;
+	color: rgb(1, 96, 111);
+
 	h2 {
 		color: $color-second;
 	}
+
 	.carousel-caption {
 		position: static;
 	}
 
 	.carousel-control-prev,
 	.carousel-control-next {
-		position: fixed;
+		margin-top: 200px;
 		font-size: 20px;
-		color: $color-second;
+		color: rgb(245, 176, 151);
 	}
 }
 
@@ -129,6 +133,12 @@ header {
 	header {
 		.hero-img {
 			background-image: url('../img/classic-car-362176_1280.jpg');
+		}
+	}
+	.offer {
+		.carousel-control-prev,
+		.carousel-control-next {
+			margin-top: 500px;
 		}
 	}
 }
