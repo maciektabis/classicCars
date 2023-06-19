@@ -181,6 +181,11 @@ header .hero-shadow {
   background-color: rgb(0, 180, 216);
 }
 
+footer {
+  background-color: rgb(245, 176, 151);
+  color: rgb(0, 180, 216);
+}
+
 @media (min-width: 768px) {
   html {
     scroll-padding-top: 272px;

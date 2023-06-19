@@ -180,6 +180,10 @@ header {
 		}
 	}
 }
+footer {
+	background-color: rgb(245, 176, 151);
+	color: $color-second;
+}
 
 @media (min-width: 768px) {
 	html {
