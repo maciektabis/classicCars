@@ -33,11 +33,16 @@ nav {
 	}
 
 	.nav-link {
+		transition: color 0.3s;
 		color: $color-second;
 		text-transform: uppercase;
 	}
 	.navbar-brand {
+		transition: color 0.3s;
 		color: rgb(245, 176, 151);
+	}
+	.navbar-brand:hover {
+		color: $color-second;
 	}
 	.nav-link:hover {
 		color: rgb(245, 176, 151);
@@ -128,7 +133,7 @@ header {
 	.carousel-control-next {
 		margin-top: 200px;
 		font-size: 20px;
-		color: rgb(245, 176, 151);
+		color: rgb(180, 106, 79);
 		z-index: 5;
 	}
 }
@@ -137,14 +142,18 @@ header {
 		color: $color-second;
 	}
 	h5 {
-		color: black;
+		color: rgb(180, 106, 79);
 	}
 	.card-body {
+		color: rgb(180, 106, 79);
+
 		font-size: 14px;
 		background-color: rgba(1, 96, 111, 0.398);
 	}
+
 	.card-footer {
-		background-color: rgba(245, 176, 151, 0.709);
+		color: rgb(180, 106, 79);
+		background-color: rgba(1, 96, 111, 0.577);
 	}
 }
 

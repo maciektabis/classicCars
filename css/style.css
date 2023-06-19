@@ -37,11 +37,16 @@ nav .navbar-nav .nav-link.show {
   color: rgb(245, 176, 151);
 }
 nav .nav-link {
+  transition: color 0.3s;
   color: rgb(0, 180, 216);
   text-transform: uppercase;
 }
 nav .navbar-brand {
+  transition: color 0.3s;
   color: rgb(245, 176, 151);
+}
+nav .navbar-brand:hover {
+  color: rgb(0, 180, 216);
 }
 nav .nav-link:hover {
   color: rgb(245, 176, 151);
@@ -131,7 +136,7 @@ header .hero-shadow {
 .offer .carousel-control-next {
   margin-top: 200px;
   font-size: 20px;
-  color: rgb(245, 176, 151);
+  color: rgb(180, 106, 79);
   z-index: 5;
 }
 
@@ -139,14 +144,16 @@ header .hero-shadow {
   color: rgb(0, 180, 216);
 }
 .team h5 {
-  color: black;
+  color: rgb(180, 106, 79);
 }
 .team .card-body {
+  color: rgb(180, 106, 79);
   font-size: 14px;
   background-color: rgba(1, 96, 111, 0.398);
 }
 .team .card-footer {
-  background-color: rgba(245, 176, 151, 0.709);
+  color: rgb(180, 106, 79);
+  background-color: rgba(1, 96, 111, 0.577);
 }
 
 @media (min-width: 768px) {
