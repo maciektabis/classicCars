@@ -156,6 +156,31 @@ header .hero-shadow {
   background-color: rgba(1, 96, 111, 0.577);
 }
 
+.contact h2 {
+  text-transform: uppercase;
+  color: rgb(0, 180, 216);
+}
+.contact form {
+  color: rgb(1, 96, 111);
+}
+.contact form .form-control {
+  border: 4px solid rgb(245, 176, 151);
+  border-radius: 50px;
+}
+.contact form input::-moz-placeholder {
+  padding-left: 10px;
+}
+.contact form input::placeholder {
+  padding-left: 10px;
+}
+.contact form textarea.form-control {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.contact form button {
+  background-color: rgb(0, 180, 216);
+}
+
 @media (min-width: 768px) {
   html {
     scroll-padding-top: 272px;
