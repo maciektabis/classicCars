@@ -1,0 +1,205 @@
+@import 'colors';
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-padding-top: 82px;
+}
+body {
+	font-family: 'Alfa Slab One', cursive;
+	position: relative;
+	background-color: whitesmoke;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $color-main;
+}
+nav {
+	background-color: whitesmoke;
+	z-index: 1;
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show {
+		color: rgb(245, 176, 151);
+	}
+
+	.nav-link {
+		transition: color 0.3s;
+		color: $color-second;
+		text-transform: uppercase;
+	}
+	.navbar-brand {
+		transition: color 0.3s;
+		color: rgb(245, 176, 151);
+	}
+	.navbar-brand:hover {
+		color: $color-second;
+	}
+	.nav-link:hover {
+		color: rgb(245, 176, 151);
+	}
+}
+header {
+	color: rgb(245, 176, 151);
+	font-family: 'Alfa Slab One', cursive;
+	h1 {
+		font-size: 50px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 14px;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/classic-car-362176_640.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+		text-transform: uppercase;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(10, 101, 129, 0.5);
+		z-index: -10;
+	}
+}
+.aboutus {
+	color: rgb(1, 96, 111);
+	h2 {
+		color: $color-second;
+	}
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $color-main;
+	}
+}
+.offer {
+	position: relative;
+
+	h2 {
+		color: $color-second;
+	}
+
+	.carousel-caption {
+		position: static;
+		color: rgb(1, 96, 111);
+	}
+	img {
+		z-index: 0;
+	}
+	.carousel-indicators {
+		button {
+			position: static;
+			background-color: rgb(245, 176, 151);
+		}
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		padding-top: 300px;
+		font-size: 40px;
+		color: rgb(180, 106, 79);
+		z-index: 5;
+	}
+}
+.team {
+	h2 {
+		color: $color-second;
+	}
+	h5 {
+		color: rgb(244, 79, 18);
+	}
+	.card-body {
+		color: rgb(244, 79, 18);
+		font-weight: 100;
+		font-size: 14px;
+		background-color: rgba(239, 245, 246, 0.398);
+	}
+
+	.card-footer {
+		color: rgb(244, 79, 18);
+		background-color: rgba(118, 189, 199, 0.577);
+	}
+}
+.contact {
+	h2 {
+		text-transform: uppercase;
+		color: $color-second;
+	}
+	form {
+		color: rgb(1, 96, 111);
+		.form-control {
+			border: 4px solid rgb(245, 176, 151);
+			border-radius: 50px;
+		}
+
+		input::placeholder {
+			padding-left: 10px;
+		}
+		textarea.form-control {
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		button {
+			background-color: $color-second;
+		}
+	}
+}
+footer {
+	background-color: rgb(245, 176, 151);
+	color: $color-second;
+}
+
+@media (min-width: 768px) {
+	html {
+		scroll-padding-top: 272px;
+	}
+}
+@media (min-width: 1200px) {
+	header {
+		.hero-img {
+			background-image: url('../img/classic-car-362176_1280.jpg');
+		}
+	}
+	.offer {
+		.carousel-control-prev,
+		.carousel-control-next {
+			margin-top: 250px;
+		}
+	}
+}
