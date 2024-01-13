@@ -25,6 +25,6 @@ Aby skompilować pliki Sass do CSS, użyj poniższego polecenia w terminalu:
 
 ```bash
 npm run build-sass
-
-## Autor
-Maciej tabiś
+```
+##Autor
+Maciej Tabiś
