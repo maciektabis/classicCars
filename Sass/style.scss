@@ -125,14 +125,14 @@ header {
 	}
 	.carousel-indicators {
 		button {
-			margin-top: 150px;
+			position: static;
 			background-color: rgb(245, 176, 151);
 		}
 	}
 	.carousel-control-prev,
 	.carousel-control-next {
-		margin-top: 200px;
-		font-size: 20px;
+		padding-top: 300px;
+		font-size: 40px;
 		color: rgb(180, 106, 79);
 		z-index: 5;
 	}
@@ -142,18 +142,18 @@ header {
 		color: $color-second;
 	}
 	h5 {
-		color: rgb(180, 106, 79);
+		color: rgb(244, 79, 18);
 	}
 	.card-body {
-		color: rgb(180, 106, 79);
-
+		color: rgb(244, 79, 18);
+		font-weight: 100;
 		font-size: 14px;
-		background-color: rgba(1, 96, 111, 0.398);
+		background-color: rgba(239, 245, 246, 0.398);
 	}
 
 	.card-footer {
-		color: rgb(180, 106, 79);
-		background-color: rgba(1, 96, 111, 0.577);
+		color: rgb(244, 79, 18);
+		background-color: rgba(118, 189, 199, 0.577);
 	}
 }
 .contact {
