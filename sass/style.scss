@@ -142,17 +142,17 @@ header {
 		color: $color-second;
 	}
 	h5 {
-		color: rgb(244, 79, 18);
+		color: rgb(1, 96, 111);
 	}
-	.card-body {
-		color: rgb(244, 79, 18);
+	.card-text {
+		color: rgb(1, 96, 111);
 		font-weight: 100;
 		font-size: 14px;
 		background-color: rgba(239, 245, 246, 0.398);
 	}
 
 	.card-footer {
-		color: rgb(244, 79, 18);
+		color: rgb(1, 96, 111);
 		background-color: rgba(118, 189, 199, 0.577);
 	}
 }
@@ -162,6 +162,9 @@ header {
 		color: $color-second;
 	}
 	form {
+		display: inline-block;
+		align-items: center;
+		width: 80%;
 		color: rgb(1, 96, 111);
 		.form-control {
 			border: 4px solid rgb(245, 176, 151);
@@ -181,7 +184,6 @@ header {
 	}
 }
 footer {
-	background-color: rgb(245, 176, 151);
 	color: $color-second;
 }
 

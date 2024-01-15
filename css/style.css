@@ -144,16 +144,16 @@ header .hero-shadow {
   color: rgb(0, 180, 216);
 }
 .team h5 {
-  color: rgb(244, 79, 18);
+  color: rgb(1, 96, 111);
 }
-.team .card-body {
-  color: rgb(244, 79, 18);
+.team .card-text {
+  color: rgb(1, 96, 111);
   font-weight: 100;
   font-size: 14px;
   background-color: rgba(239, 245, 246, 0.398);
 }
 .team .card-footer {
-  color: rgb(244, 79, 18);
+  color: rgb(1, 96, 111);
   background-color: rgba(118, 189, 199, 0.577);
 }
 
@@ -162,6 +162,9 @@ header .hero-shadow {
   color: rgb(0, 180, 216);
 }
 .contact form {
+  display: inline-block;
+  align-items: center;
+  width: 80%;
   color: rgb(1, 96, 111);
 }
 .contact form .form-control {
@@ -183,7 +186,6 @@ header .hero-shadow {
 }
 
 footer {
-  background-color: rgb(245, 176, 151);
   color: rgb(0, 180, 216);
 }
 
